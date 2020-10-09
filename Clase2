@@ -1,0 +1,13 @@
+package Examen;
+public class Clase2 {
+
+    public double suma(double[] sum) {
+        double a = 0;
+        for (int i = 0; i < sum.length; i++) {
+            a = a + sum[i];
+        }
+        a = a / sum.length;
+        return a;
+    }
+
+  
