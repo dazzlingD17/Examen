@@ -1,0 +1,70 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Examen;
+import java.util.Scanner;
+import Examen.Clase2;
+import java.util.ArrayList;
+import java.util.List;
+/**
+ *
+ * @author dazz
+ */
+public class Examen{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       
+        Scanner V = new Scanner(System.in);
+     //int i=1;
+     List  operaciones;
+     
+      operaciones = new double ArrayList ();
+      
+     
+        
+       
+        for (int i = 1; i < operaciones; i++) {
+            do {
+                System.out.print("INSERTE NUMERO A LA LISTA: ");
+                operaciones.set(i, V.nextDouble());
+                System.out.println("");
+            } while (operaciones.get(i) < 0 || operaciones.get(i)++);
+        }
+        Clase2 metodo = new Clase2();
+ 
+        int opcion1, opcion2;
+        do {
+            opcion2 = 1;
+            System.out.println( "\n ELIGA UNA OPCION"
+                    + "\n[1]suma"
+                    + "\n[2]resta"
+                    + "\n[3]multiplicacion"
+                    + "\n[4]salir");
+            opcion1 = V.nextInt();
+            switch (opcion1) {
+                case 1:
+                    System.out.println("SUMA: " + metodo.Prom(sum));
+                    break;
+                case 2:
+                    metodo.Primeros(Resta);
+                    break;
+                case 3:
+                    metodo.Multi();
+                case 4:
+                    System.out.println("");
+                    break;
+            }
+            if (opcion1 != 4) {
+                System.out.println("Desea continuar [0]si/[1]no");
+                opcion2 = V.nextInt();
+            }
+        } while (opcion2 != 1);
+
+    }
+}
